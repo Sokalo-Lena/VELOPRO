@@ -2,13 +2,13 @@
 Documentation    Suite description
 Resource         _resource.robot
 Test Setup       Prepare Test Environment
-#Test Teardown    Close All Browsers
+Test Teardown    Close All Browsers
 
 *** Test Cases ***
 Main Page
     Element Should Contain  css=div > div.title  Захисти свій велосипед від крадіжки
     Element Should Contain  css=div.find > a  ЗНАЙТИ
-    Element Should Contain  css=div.reg > a  ЗАРЕЭСТРУВАТИ  #помилка в тексті
+    Element Should Contain  css=div.reg > a  ЗАРЕЄСТРУВАТИ
     Element Should Contain  css=#content > div.container > div > div > div  Як це працює?
     Element Should Contain  css=div.btn-police > a  Перевірити велосипед у базі
     Click Element  css=#navbarSupportedContent > ul > li:nth-child(2) > a  #пошук
